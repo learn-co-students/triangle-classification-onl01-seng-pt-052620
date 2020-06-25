@@ -20,23 +20,23 @@ class Triangle
   end 
 end 
 
-  def kind
-    real_triangle = self.check_triangle   
-       
-    end 
-  end 
 
-  def check_triangle
-    if self.kind  
-  end 
-   
 
   class TriangleError < StandardError  
   end 
 end
 
 
+# def kind
+#   real_triangle = self.check_triangle   
+     
+#   end 
+# end 
 
+# def check_triangle
+#   if self.kind  
+# end 
+ 
 
 # def validate_triangle
 #   real_triangle = [(a + b > c), (a + c > b), (b + c > a)]
