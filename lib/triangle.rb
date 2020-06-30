@@ -9,12 +9,12 @@ class Triangle
   end
 
   def legal?
-    @triangle_sides.each {|side| side > 0}
+    @triangle_sides.all? {|side| side > 0} && @triangle_sides[0] + @triangle_sides[1] > @triangle_sides[2] && @triangle_sides[1] + @triangle_sides[2] > @triangle_sides[0] && @triangle_sides[2] + @triangle_sides[0] > @triangle_sides[1]
   end
 
   class TriangleError < StandardError
   end
-  
+
   def kind
     if legal?
       if @triangle_sides[0] == @triangle_sides[1] && @triangle_sides[1] == @triangle_sides[2]
